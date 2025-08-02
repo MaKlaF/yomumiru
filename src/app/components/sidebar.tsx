@@ -25,6 +25,8 @@ export default function Sidebar({ readingList, watchingList }: Props) {
             <span className="text-xl font-semibold">
                 {view === "reading" ? "Currently Reading" : "Currently Watching"}
             </span>
+
+            {/* Reading vs Watching Toggle */}
             <label className="toggle text-base-content">
               <input type="checkbox" value="reading" checked={view === "watching"} onChange={(e) => setView(e.target.checked ? "watching" : "reading")}/>
 
